@@ -8,7 +8,7 @@ class ModelLogin {
     public function verificacionUsuario($usuario, $contrasena) {
 
         $pdo = Database::connect();
-        $sql = "SELECT u.ID_USU,u.TIPO_USU,c.CEDULA_CAJ,c.NOMBRES_CAJ,c.APELLIDOS_CAJ,u.NOMBRE_USU,u.PASS_USU FROM tbl_usuarios u INNER join tbl_cajero c on u.ID_CAJ=c.ID_CAJ where u.NOMBRE_USU='zappy' and u.PASS_USU='zero';";
+        $sql = "SELECT u.id_usu,u.tipo_usu,c.cedula_caj,c.nombres_caj,c.apellidos_caj,u.nombre_usu,u.pass_usu FROM tbl_usuarios u INNER join tbl_cajero c on u.id_caj=c.id_caj where u.nombre_usu=? and u.pass_usu=?;";
         $consulta = $pdo->prepare($sql);
         
         $consulta->execute(array($usuario, $contrasena));
