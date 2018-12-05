@@ -8,11 +8,11 @@
  */
 class Database {
 
-    private static $dbName = 'dbheod7aokl3v4';
-    private static $dbHost = 'ec2-54-225-196-122.compute-1.amazonaws.com';
+    private static $dbName = 'd49b67mam8b5hd';
+    private static $dbHost = 'ec2-174-129-41-12.compute-1.amazonaws.com';
     private static $port = '5432';
-    private static $dbUsername = 'pkesguegjkkpzb';
-    private static $dbUserPassword = 'e06387273bbd4f00479b95cf1d77f77a2276de4969b0844e57770d2feff4eb3c';
+    private static $dbUsername = 'qlojtwcouiopvh';
+    private static $dbUserPassword = '1124aab96a3cb96ec2e3cfc5b53712066fa51163b09cb2a80463e500bea9bda3';
 //    
 
     /**
